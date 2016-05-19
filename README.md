@@ -31,16 +31,17 @@ If you don't have any cliens to connect, here is the list.
 - CIRC https://chrome.google.com/webstore/detail/circ/bebigdkelppomhhjaaianniiifjbgocn
 - IRCCloud https://www.irccloud.com
 
-##### Desktop app
+##### Desktop apps
 
-- Mac
+- For Mac
   - Colloquy http://colloquy.info/
 
-- Windows
+- For Windows
   - Limechat http://limechat.net/
 
 ### IRCbot
-If you want to let a simple IRC bot run, check out here
+**If you want to let a simple IRC bot run, check out [here.](/)**
+
 
 ## Author
 
