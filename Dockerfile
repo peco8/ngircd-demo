@@ -1,20 +1,28 @@
+# Using official ubuntu base image
 FROM ubuntu:trusty
 
-RUN echo 'version 1.0'
+MAINTAINER "Toshiki Inami <t-inami@arukas.io>"
 
-ENV DEBIAN_FRONTEND noninteractive
+# ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get -qq update
-RUN apt-get -yqq upgrade
-RUN apt-get -yqq install supervisor
-RUN apt-get -yqq install ngircd
+# Install ngircd and supervisor
+RUN apt-get update -q && \
+    apt-get install -y -qq \
+                      ngircd \
+                      supervisor && \
+    apt-get clean && \
+    apt-get autoclean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD ngircd.conf /etc/ngircd/ngircd.conf
-ADD ngircd.motd /etc/ngircd/ngircd.motd
+# Congigure ngircd
+COPY ngircd/ngircd.conf /etc/ngircd/ngircd.conf
+COPY ngircd/ngircd.motd /etc/ngircd/ngircd.motd
 
-ADD locale /etc/default/locale
-ADD supervisor.conf /etc/supervisor/conf.d/ngircd.conf
+# Configure supervisord
+COPY locale /etc/default/locale
+COPY supervisor.conf /etc/supervisor/conf.d/ngircd.conf
 
+# Listening on TCP port 6697
 EXPOSE 6667
 
 CMD ["/usr/bin/supervisord"]
