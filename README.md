@@ -1,5 +1,5 @@
 # ngircd-demo 
-IRC damon demo ( using ngIRCd: a free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL).  http://ngircd.barton.de/ ) 
+IRC damon demo ( using ngIRCd: a free, portable and lightweight Internet Relay Chat server for small or private networks. http://ngircd.barton.de/ ) 
 
 ## Running locally
 
@@ -7,17 +7,17 @@ IRC damon demo ( using ngIRCd: a free, portable and lightweight Internet Relay C
 $ git clone https://github.com/peco8/ngircd-demo.git
 $ cd ngircd-demo
 $ docker build --no-cache --tag quickstart-php .
-$ docker run -rm -d -p 6667:6667 ngircd-demo
+$ docker run -d -p 6667:6667 ngircd-demo
 ```
 Your app should now be running locally.
 
 ## Deploying to Arukas
 
-[Install the Arukas CLI.](https://github.com/arukasio/cli)
+[Install the Arukas CLI](https://github.com/arukasio/cli),
 
 or If you have docker installed already,
 ```
-docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_OKEN> -e ARUKAS_JSON_API_SECRET=<SECRET_KEY> arukasio/arukas run --instances=3 --mem=512 -ports=80:tcp peco8/ngircd-demo
+$ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_OKEN> -e ARUKAS_JSON_API_SECRET=<SECRET_KEY> arukasio/arukas run --instances=3 --mem=512 -ports=80:tcp peco8/ngircd-demo
 ```
 ## TIPS
 If you don't have any cliens to connect, here is the list.
@@ -43,7 +43,7 @@ If you don't have any cliens to connect, here is the list.
 Create `bot/env.php file` following `bot/env.sample.php`.
 You can overload and customize specific variables when running scripts.
 
-`php ngircd-demo/bot/env.php`
+`$ php ngircd-demo/bot/env.php`
 
 ## Author
 
