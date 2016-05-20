@@ -43,7 +43,7 @@ If you don't have any cliens to connect, here is the list.
 Create `bot/env.php file` following `bot/env.sample.php`.
 You can overload and customize specific variables when running scripts.
 
-`$ php ngircd-demo/bot/env.php`
+`$ php ngircd-demo/bot/run.php`
 
 ## Author
 
