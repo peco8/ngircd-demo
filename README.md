@@ -4,7 +4,7 @@ IRC damon demo ( using [ngIRCd](http://ngircd.barton.de/): a free, portable and 
 ## Running locally
 
 ```
-$ git clone git@github.com:peco8/quickstart-nodejs.git
+$ git clone git@github.com:peco8/ngircd-demo.git
 $ cd ngircd-demo
 $ docker build --no-cache --tag quickstart-php .
 $ docker run -d -p 6667:6667 ngircd-demo
