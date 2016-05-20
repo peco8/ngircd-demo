@@ -1,5 +1,5 @@
 # ngircd-demo 
-IRC damon demo ( using ngIRCd: a free, portable and lightweight Internet Relay Chat server for small or private networks. http://ngircd.barton.de/ ) 
+IRC damon demo ( using [ngIRCd](http://ngircd.barton.de/): a free, portable and lightweight Internet Relay Chat server for small or private networks.) 
 
 ## Running locally
 
@@ -24,20 +24,20 @@ If you don't have any cliens to connect, here is the list.
 
 ### IRC Client
 ##### CLI base
-- Irssi (https://irssi.org/)
-- Weechat (https://weechat.org/)
+- [Irssi](https://irssi.org/)
+- [Weechat](https://weechat.org/)
 
 ##### Browser based apps
-- CIRC (https://chrome.google.com/webstore/detail/circ/bebigdkelppomhhjaaianniiifjbgocn)
-- IRCCloud (https://www.irccloud.com)
+- [CIRC](https://chrome.google.com/webstore/detail/circ/bebigdkelppomhhjaaianniiifjbgocn)
+- [IRCCloud](https://www.irccloud.com)
 
 ##### Desktop apps
 
 - For Mac
-  - Colloquy (http://colloquy.info/)
+  - [Colloquy](http://colloquy.info/)
 
 - For Windows
-  - Limechat (http://limechat.net/)
+  - [Limechat](http://limechat.net/)
 
 ### IRCbot
 Create `bot/env.php file` following `bot/env.sample.php`.
